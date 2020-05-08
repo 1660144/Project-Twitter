@@ -1,0 +1,135 @@
+:root{
+    --primary-color: rgb(29, 161, 242, 1.0);
+    --background-color-nav: rgba(29,161,242,0.15);
+    --background-space: rgb(230, 236, 240);
+    --color-post-txt: rgb(101, 119, 134);
+    --color-text: rgb(20, 23, 26);
+    --background-color-button-tweet: rgb(29, 161, 242);
+    --background-toptrends: rgb(245, 248, 250);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* position: absolute;
+    left: 50%;
+    transform: translateX(-50%); */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    align-items: stretch;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+a:hover{
+    text-decoration: underline;
+}
+ul{
+    list-style: none;
+}
+input{
+    outline: none;
+}
+.btn{
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+}
+
+/* -------- padding, margin, border - */
+.mr-t-10{
+    margin-top: 10px;
+}
+.mr-l-10{
+    margin-left: 10px;
+}
+.mr-r-l-5{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.mr-l-5{
+    margin-left: 5px;
+}
+.mr-l-r-5{
+    padding: 0 5px;
+}
+.mr-t-20{
+    margin-top: 20px;
+}
+.mr-r-30{
+    margin-right: 30px;
+}
+.mr-l-10{
+    margin-left: 10px;
+}
+.mr-b-10{
+    margin-bottom: 10px;
+}
+.pd-t-10{
+    padding-top: 10px;
+}
+.pd-b-10{
+    padding-bottom: 10px;
+}
+.pd-t-5{
+    padding-top: 5px;
+}
+.pd-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pd-l-r-15{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.bor-t{
+    border-top: 1px solid var(--background-space);
+}
+.bor-b{
+    border-bottom: 1px solid var(--background-space);
+}
+.border-post{
+    border-bottom: 1px solid var(--background-space);
+}
+
+.bor-r-50{
+    border-radius: 50%;
+}
+
+svg{
+    transform: scale(.8);
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.h-53{
+    height: 53px;
+}
+
+.main-timeline-user, 
+.content__head, 
+.content__head-username, 
+.content__txt,
+.header-user
+{
+    display: flex;
+}
+
+.tweet-icon svg, 
+.post-arrow-down svg, 
+.follower-avatar svg,
+.header-user-icon svg
+{
+    transform: scale(.82);
+    fill: var(--color-post-txt)
+}
