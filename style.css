@@ -2,10 +2,14 @@
     --primary-color: rgb(29, 161, 242, 1.0);
     --background-color-nav: rgba(29,161,242,0.15);
     --background-space: rgb(230, 236, 240);
+    --background-main-post: rgba(240, 240, 240, 0.452);
     --color-post-txt: rgb(101, 119, 134);
-    --color-text: rgb(20, 23, 26);
+    --color-text: rgb(92, 92, 92);
     --background-color-button-tweet: rgb(29, 161, 242);
     --background-toptrends: rgb(245, 248, 250);
+    --color-border-link: rgb(204, 214, 221);
+    --color-post-link-title: rgb(20, 23, 26);
+    --color-post-link-content: rgb(101, 119, 134);;
 }
 
 *{
@@ -44,6 +48,16 @@ input{
     outline: none;
     border: none;
 }
+/* -------- font --------- */
+.fw-600{
+    font-weight: 800;
+}
+.fs-19{
+    font-size: 19px;
+}
+
+/* -------- font --------- */
+
 
 /* -------- padding, margin, border - */
 .mr-t-10{
