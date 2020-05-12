@@ -77,15 +77,7 @@ main{
 }
 
 .tweet:hover{
-    max-width: 27px;  
-    max-height: 27px;
     cursor: pointer;
-    object-fit: contain;
-    display: flex;
-    justify-content: space;
-    align-items: center;
-    border-radius: 50%;
-    background-color: var(--background-color-nav);
 }
 .tweet{
     margin-right: 10px;
@@ -260,6 +252,8 @@ main{
 .main-wrapper-right{
     max-width: 350px;
     /* text-align: center; */
+    margin-left: 30px;
+    padding-bottom: 56px;
 }
 
 /* ----- search bar ----- */
@@ -269,14 +263,13 @@ main{
     font-size: 15px;
 }
 .main-wrapper-right-search{
+    position: sticky;
+    top: 0;
     font-size: 15px;
     height: 40px;
-    padding-left: 20px;
     width: 100%;
-    border-radius: 25px;
     outline: none;
     border: none;
-    background-color: var(--background-space)
 }
 .search-content{
     display: flex;
@@ -285,6 +278,9 @@ main{
     height: 100%;
     align-items: center;
     top: 0;
+    width: 100%;
+    background-color: var(--background-space);
+    border-radius: 25px;
 }
 .search__icon{
     padding: 0 0 0 10px;
@@ -313,7 +309,7 @@ main{
     font-size: 19px;
     font-weight: 800;
 }
-.main-wrapper-right-toptrends-content{
+.main-wrapper-right-toptrends{
     border-radius: 15px;
     background-color: var(--background-toptrends);
 }
@@ -330,6 +326,25 @@ main{
     color: var(--color-post-txt);
     font-size: 15px;
     color: var(--color-post-txt);
+}
+.main-wrapper-right-footer{
+    padding: 10px 0;
+}
+.main-wrapper-right-footer nav a{
+    font-size: 13px;
+    color: var(--color-footer);
+}
+.main-wrapper-right-footer nav a:not(:first-child){
+    margin-left: 7px;
+}
+.main-wrapper-right-footer .footer-content{
+    padding: 3px;
+    font-size: 13px;
+    color: var(--color-footer);
+}
+.wrapper{
+    position: sticky;
+    top: 0;
 }
 .pots-video video{
     width: 250px;

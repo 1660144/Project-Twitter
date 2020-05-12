@@ -9,7 +9,8 @@
     --background-toptrends: rgb(245, 248, 250);
     --color-border-link: rgb(204, 214, 221);
     --color-post-link-title: rgb(20, 23, 26);
-    --color-post-link-content: rgb(101, 119, 134);;
+    --color-post-link-content: rgb(101, 119, 134);
+    --color-footer: #657686;
 }
 
 *{
@@ -74,7 +75,7 @@ input{
     margin-left: 5px;
 }
 .mr-l-r-5{
-    padding: 0 5px;
+    margin: 0 5px;
 }
 .mr-t-20{
     margin-top: 20px;
@@ -87,6 +88,9 @@ input{
 }
 .mr-b-10{
     margin-bottom: 10px;
+}
+.mr-b-15{
+    margin-bottom: 15px;
 }
 .pd-t-10{
     padding-top: 10px;
@@ -101,6 +105,13 @@ input{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.pd-15{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+} 
 .pd-l-r-15{
     padding-left: 15px;
     padding-right: 15px;
@@ -141,9 +152,16 @@ img{
 
 .tweet-icon svg, 
 .post-arrow-down svg, 
-.follower-avatar svg,
 .header-user-icon svg
 {
     transform: scale(.82);
-    fill: var(--color-post-txt)
+    fill: var(--color-post-txt);
+}
+.follower-avatar svg{
+    transform: scale(.7);
+    fill: var(--color-post-txt);
+}
+.follower-avatar {
+    text-align: right;
+    width: 49px;
 }
