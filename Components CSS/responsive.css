@@ -1,0 +1,38 @@
+@media screen and (max-width: 1265px){
+    .header-nav-ul-li__txt, .header-nav-button, .header-user-content, .header-user-icon{
+       display: none;
+    }
+}
+
+
+@media screen and (max-width: 1074px){
+    .main-wrapper-right{
+        max-width: 288px;
+    }
+}
+@media screen and (max-width: 987px){
+    .main-wrapper-right{
+        display: none;
+    }
+}
+@media screen and (max-width: 752px){
+    header{
+        flex-grow: 0;
+    }
+}
+@media screen and (max-width: 500px){
+    header, .main-wrapper-left-tweet{
+        display: none;
+    }
+    main{
+        width: 100vw;
+        margin-bottom: 53px;
+    }
+    .main-wrapper-left{
+        flex-grow: 0;
+        width: 100vw;
+    }
+    .nav-mobile{
+        display: block;
+    }
+}
