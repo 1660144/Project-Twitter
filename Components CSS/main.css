@@ -62,18 +62,18 @@ main{
     width: 100%;
 }
 .main-wrapper-left-tweet__content__input::-webkit-input-placeholder { /* Edge */
-    color: var(--color-post-txt);
+    color: var(--color-border-link);
     font-size: 18px;
 }
   
 .main-wrapper-left-tweet__content__input::-ms-input-placeholder { /* Internet Explorer 10-11 */
     font-size: 18px;
-    color: var(--color-post-txt);
+    color: var(--color-border-link);
 }
 
 .main-wrapper-left-tweet__content__input::placeholder {
     font-size: 18px;
-    color: var(--color-post-txt);
+    color: var(--color-border-link);
 }
 
 .tweet:hover{
@@ -164,8 +164,7 @@ main{
     width: 100%;
 }
 .post-images.list-images img{
-    max-width: 50%;
-    max-height: 50%;
+    
     padding: 1px;
 }
 .post-tweet-group{
@@ -214,7 +213,6 @@ main{
 }
 .main-timeline-follow:hover{
     background-color: var(--background-main-post);
-    transition: all .8s ease-out;
 }
 .follower-name{
     flex-grow: 1;
@@ -259,7 +257,6 @@ main{
 /* ----- search bar ----- */
 .main-wrapper-right-search{
     position: relative;
-    margin: 10px 0;
     font-size: 15px;
 }
 .main-wrapper-right-search{
@@ -270,6 +267,10 @@ main{
     width: 100%;
     outline: none;
     border: none;
+    z-index: 1;
+}
+.main-wrapper-right-search .group-item{
+    border-bottom: none;
 }
 .search-content{
     display: flex;
@@ -312,6 +313,11 @@ main{
 .main-wrapper-right-toptrends{
     border-radius: 15px;
     background-color: var(--background-toptrends);
+    margin-top: 20px;
+}
+.trend:hover{
+    background-color: var(--background-main-post);
+    cursor: pointer;
 }
 .top-trend{
     display: flex;
@@ -373,4 +379,32 @@ main{
 }
 .post-link .post-txt{
     padding: 5px 10px;
+}
+.list-04 .images-item{
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    margin-bottom: 1px
+}
+.page-on{
+    display: block;
+}
+.page-off{
+    display: none;
+}
+
+/** nav bottom */
+.nav-mobile{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 53px;
+    width: 100vw;
+    background-color: #fff;
+    display: none;
+}
+.nav-mobile nav ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }

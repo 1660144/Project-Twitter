@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./Components CSS/header.css">
     <link rel="stylesheet" href="./Components CSS/main.css">
+    <link rel="stylesheet" href="./Components CSS/explore.css">
+    <link rel="stylesheet" href="./Components CSS/responsive.css">
 </head>
 
 <body>
@@ -19,7 +21,7 @@
             </div>
             <nav class="header-nav">
                 <ul class="header-nav-ul">
-                    <li class="header-nav-ul-li active">
+                    <li id="home" class="header-nav-ul-li active">
                         <div class="header-nav-ul-li-content-wrapper">
                             <div class="header-nav-ul-li-content nav-icon">
                                 <svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg">
@@ -33,7 +35,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="header-nav-ul-li">
+                    <li id="explore" class="header-nav-ul-li">
                         <div class="header-nav-ul-li-content-wrapper">
                             <div class="header-nav-ul-li-content nav-icon">
                                 <svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +49,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="header-nav-ul-li">
+                    <li id="notifications" class="header-nav-ul-li">
                         <div class="header-nav-ul-li-content-wrapper">
                             <div class="header-nav-ul-li-content nav-icon">
                                 <svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg">
@@ -62,7 +64,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="header-nav-ul-li">
+                    <li id="messages" class="header-nav-ul-li">
                         <div class="header-nav-ul-li-content-wrapper">
                             <div class="header-nav-ul-li-content nav-icon">
                                 <svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +79,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="header-nav-ul-li">
+                    <li id="bookmarks" class="header-nav-ul-li">
                         <div class="header-nav-ul-li-content-wrapper">
                             <div class="header-nav-ul-li-content nav-icon">
                                 <svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg">
@@ -92,7 +94,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="header-nav-ul-li">
+                    <li id="list" class="header-nav-ul-li">
                         <div class="header-nav-ul-li-content-wrapper">
                             <div class="header-nav-ul-li-content nav-icon">
                                 <svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg">
@@ -110,7 +112,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="header-nav-ul-li">
+                    <li id="profile" class="header-nav-ul-li">
                         <div class="header-nav-ul-li-content-wrapper">
                             <div class="header-nav-ul-li-content nav-icon">
                                 <svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg">
@@ -125,7 +127,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="header-nav-ul-li">
+                    <li id="more" class="header-nav-ul-li">
                         <div class="header-nav-ul-li-content-wrapper">
                             <div class="header-nav-ul-li-content nav-icon">
                                 <svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg">
@@ -206,484 +208,255 @@
     <main>
         <div class="main-wrapper">
             <div class="main-wrapper-left">
-                <div class="main-wrapper-left-head wrapper-head group-item pd-l-r-15 h-53">
-                    <div class="main-wrapper-left-head__txt fw-600 fs-19">Home</div>
-                    <div class="main-wrapper-left-head__icon">
-                        <svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg">
-                            <g>
-                                <path
-                                    d="M22.772 10.506l-5.618-2.192-2.16-6.5c-.102-.307-.39-.514-.712-.514s-.61.207-.712.513l-2.16 6.5-5.62 2.192c-.287.112-.477.39-.477.7s.19.585.478.698l5.62 2.192 2.16 6.5c.102.306.39.513.712.513s.61-.207.712-.513l2.16-6.5 5.62-2.192c.287-.112.477-.39.477-.7s-.19-.585-.478-.697zm-6.49 2.32c-.208.08-.37.25-.44.46l-1.56 4.695-1.56-4.693c-.07-.21-.23-.38-.438-.462l-4.155-1.62 4.154-1.622c.208-.08.37-.25.44-.462l1.56-4.693 1.56 4.694c.07.212.23.382.438.463l4.155 1.62-4.155 1.622zM6.663 3.812h-1.88V2.05c0-.414-.337-.75-.75-.75s-.75.336-.75.75v1.762H1.5c-.414 0-.75.336-.75.75s.336.75.75.75h1.782v1.762c0 .414.336.75.75.75s.75-.336.75-.75V5.312h1.88c.415 0 .75-.336.75-.75s-.335-.75-.75-.75zm2.535 15.622h-1.1v-1.016c0-.414-.335-.75-.75-.75s-.75.336-.75.75v1.016H5.57c-.414 0-.75.336-.75.75s.336.75.75.75H6.6v1.016c0 .414.335.75.75.75s.75-.336.75-.75v-1.016h1.098c.414 0 .75-.336.75-.75s-.336-.75-.75-.75z">
-                                </path>
-                            </g>
-                        </svg>
-                    </div>
-                </div>
-                <div class="main-wrapper-left-tweet">
-                    <div class="main-wrapper-left-tweet__avatar">
-                        <img src="https://abs.twimg.com/sticky/default_profile_images/default_profile_reasonably_small.png"
-                            alt="">
-                    </div>
-                    <div class="main-wrapper-left-tweet__content mr-r-l-5">
-                        <input class="main-wrapper-left-tweet__content__input" type="text"
-                            placeholder="What's happening?">
-                        <div class="tweet__content__icons">
-                            <div class="tweet__content__icons-left">
-                                <div class="tweet-add-photo tweet">
-                                    <svg xmlns="http://www.w3.org/2000/svg">
-                                        <g>
-                                            <path
-                                                d="M19.75 2H4.25C3.01 2 2 3.01 2 4.25v15.5C2 20.99 3.01 22 4.25 22h15.5c1.24 0 2.25-1.01 2.25-2.25V4.25C22 3.01 20.99 2 19.75 2zM4.25 3.5h15.5c.413 0 .75.337.75.75v9.676l-3.858-3.858c-.14-.14-.33-.22-.53-.22h-.003c-.2 0-.393.08-.532.224l-4.317 4.384-1.813-1.806c-.14-.14-.33-.22-.53-.22-.193-.03-.395.08-.535.227L3.5 17.642V4.25c0-.413.337-.75.75-.75zm-.744 16.28l5.418-5.534 6.282 6.254H4.25c-.402 0-.727-.322-.744-.72zm16.244.72h-2.42l-5.007-4.987 3.792-3.85 4.385 4.384v3.703c0 .413-.337.75-.75.75z">
-                                            </path>
-                                            <circle cx="8.868" cy="8.309" r="1.542"></circle>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="tweet-add-gift tweet">
-                                    <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg">
-                                        <g>
-                                            <path
-                                                d="M19 10.5V8.8h-4.4v6.4h1.7v-2h2v-1.7h-2v-1H19zm-7.3-1.7h1.7v6.4h-1.7V8.8zm-3.6 1.6c.4 0 .9.2 1.2.5l1.2-1C9.9 9.2 9 8.8 8.1 8.8c-1.8 0-3.2 1.4-3.2 3.2s1.4 3.2 3.2 3.2c1 0 1.8-.4 2.4-1.1v-2.5H7.7v1.2h1.2v.6c-.2.1-.5.2-.8.2-.9 0-1.6-.7-1.6-1.6 0-.8.7-1.6 1.6-1.6z">
-                                            </path>
-                                            <path
-                                                d="M20.5 2.02h-17c-1.24 0-2.25 1.007-2.25 2.247v15.507c0 1.238 1.01 2.246 2.25 2.246h17c1.24 0 2.25-1.008 2.25-2.246V4.267c0-1.24-1.01-2.247-2.25-2.247zm.75 17.754c0 .41-.336.746-.75.746h-17c-.414 0-.75-.336-.75-.746V4.267c0-.412.336-.747.75-.747h17c.414 0 .75.335.75.747v15.507z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="tweet-add-poll tweet">
-                                    <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg">
-                                        <g>
-                                            <path
-                                                d="M20.222 9.16h-1.334c.015-.09.028-.182.028-.277V6.57c0-.98-.797-1.777-1.778-1.777H3.5V3.358c0-.414-.336-.75-.75-.75s-.75.336-.75.75V20.83c0 .415.336.75.75.75s.75-.335.75-.75v-1.434h10.556c.98 0 1.778-.797 1.778-1.777v-2.313c0-.095-.014-.187-.028-.278h4.417c.98 0 1.778-.798 1.778-1.778v-2.31c0-.983-.797-1.78-1.778-1.78zM17.14 6.293c.152 0 .277.124.277.277v2.31c0 .154-.125.28-.278.28H3.5V6.29h13.64zm-2.807 9.014v2.312c0 .153-.125.277-.278.277H3.5v-2.868h10.556c.153 0 .277.126.277.28zM20.5 13.25c0 .153-.125.277-.278.277H3.5V10.66h16.722c.153 0 .278.124.278.277v2.313z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="tweet-add-emoji tweet">
-                                    <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg">
-                                        <g>
-                                            <path
-                                                d="M12 22.75C6.072 22.75 1.25 17.928 1.25 12S6.072 1.25 12 1.25 22.75 6.072 22.75 12 17.928 22.75 12 22.75zm0-20C6.9 2.75 2.75 6.9 2.75 12S6.9 21.25 12 21.25s9.25-4.15 9.25-9.25S17.1 2.75 12 2.75z">
-                                            </path>
-                                            <path
-                                                d="M12 17.115c-1.892 0-3.633-.95-4.656-2.544-.224-.348-.123-.81.226-1.035.348-.226.812-.124 1.036.226.747 1.162 2.016 1.855 3.395 1.855s2.648-.693 3.396-1.854c.224-.35.688-.45 1.036-.225.35.224.45.688.226 1.036-1.025 1.594-2.766 2.545-4.658 2.545z">
-                                            </path>
-                                            <circle cx="14.738" cy="9.458" r="1.478"></circle>
-                                            <circle cx="9.262" cy="9.458" r="1.478"></circle>
-                                        </g>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="tweet__content__icons-right">
-                                <button class="btn">tweet</button>
-                            </div>
+                <div id="home" class="main-wrapper-home page-on">
+                    <div class="main-wrapper-left-head wrapper-head group-item pd-l-r-15 h-53">
+                        <div class="main-wrapper-left-head__txt fw-600 fs-19">Home</div>
+                        <div class="main-wrapper-left-head__icon mr-l-20">
+                            <svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path
+                                        d="M22.772 10.506l-5.618-2.192-2.16-6.5c-.102-.307-.39-.514-.712-.514s-.61.207-.712.513l-2.16 6.5-5.62 2.192c-.287.112-.477.39-.477.7s.19.585.478.698l5.62 2.192 2.16 6.5c.102.306.39.513.712.513s.61-.207.712-.513l2.16-6.5 5.62-2.192c.287-.112.477-.39.477-.7s-.19-.585-.478-.697zm-6.49 2.32c-.208.08-.37.25-.44.46l-1.56 4.695-1.56-4.693c-.07-.21-.23-.38-.438-.462l-4.155-1.62 4.154-1.622c.208-.08.37-.25.44-.462l1.56-4.693 1.56 4.694c.07.212.23.382.438.463l4.155 1.62-4.155 1.622zM6.663 3.812h-1.88V2.05c0-.414-.337-.75-.75-.75s-.75.336-.75.75v1.762H1.5c-.414 0-.75.336-.75.75s.336.75.75.75h1.782v1.762c0 .414.336.75.75.75s.75-.336.75-.75V5.312h1.88c.415 0 .75-.336.75-.75s-.335-.75-.75-.75zm2.535 15.622h-1.1v-1.016c0-.414-.335-.75-.75-.75s-.75.336-.75.75v1.016H5.57c-.414 0-.75.336-.75.75s.336.75.75.75H6.6v1.016c0 .414.335.75.75.75s.75-.336.75-.75v-1.016h1.098c.414 0 .75-.336.75-.75s-.336-.75-.75-.75z">
+                                    </path>
+                                </g>
+                            </svg>
                         </div>
                     </div>
-                </div>
-                <div class="space"></div>
-                <section class='main-posts'>
-                    <article class="main-post pd-l-r-15 pd-b-10 border-post">
-                        <div class="main-post-pdtop"></div>
-                        <div class="main-post-content">
-                            <div class="main-post-content-avatar">
-                                <img alt="" draggable="true"
-                                    src="https://pbs.twimg.com/profile_images/1148300782242095105/9vWg5A_I_bigger.png"
-                                    class="css-9pa8cd">
-                            </div>
-                            <div class="main-post-content-post mr-r-l-5">
-                                <div class="post-head">
-                                    <div class="post-head-left">
-                                        <div class="post-head-left user">
-                                            <span>billboard</span>
-                                        </div>
-                                        <div class="post-head-tick mr-l-5">
-                                            <svg width="22" height="22" fill="rgb(29, 161, 242, 1.0)">
-                                                <g>
-                                                    <path
-                                                        d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z">
-                                                    </path>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div class="post-head-user mr-l-5">
-                                            <span>@billboard</span>
-                                        </div>
-                                        <div class="post-line mr-l-5">
-                                            <span>-</span>
-                                        </div>
-                                        <div class="post-time mr-l-5"><span>12h</span></div>
-                                    </div>
-                                    <div class="post-head-right">
-                                        <div class="post-arrow-down">
-                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                viewBox="0 0 512.011 512.011"
-                                                style="enable-background:new 0 0 512.011 512.011;" xml:space="preserve">
-                                                <g>
-                                                    <g>
-                                                        <path d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0
-			s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667
-			C514.096,145.416,514.096,131.933,505.755,123.592z" />
-                                                    </g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post_txt">
-                                    <p>Elon Musk and Grime's new bundle of joy sent the Internet inro a spiral
-                                        of confusion
-                                    </p>
-                                </div>
-                                <div class="post-link">
-                                    <a target="_blank" href="https://www.billboard.com/articles/news/9373084/grimes-elon-musks-unusual-baby-name-isnt-valid-in-california">
-                                        <div class="post-images">
-                                            <img src="https://pbs.twimg.com/card_img/1257983869883744258/9qnsiWHQ?format=jpg&name=small"
-                                                alt="">
-                                        </div>
-                                        <div class="post-txt">
-                                            <p class="post-txt__title">Grimes & Elon Musk's Unsual Baby Name
-                                                Isn't Valid in California
-                                            </p>
-                                            <p>The moniker won't be valid in the state of California
-                                                where the baby was presumably born
-                                            </p>
-                                            <p>
-                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" 
-                                                width="16.25px" 
-                                                height="16.25px"><g style="transform: scale(0.7)"><path d="M11.96 14.945c-.067 0-.136-.01-.203-.027-1.13-.318-2.097-.986-2.795-1.932-.832-1.125-1.176-2.508-.968-3.893s.942-2.605 2.068-3.438l3.53-2.608c2.322-1.716 5.61-1.224 7.33 1.1.83 1.127 1.175 2.51.967 3.895s-.943 2.605-2.07 3.438l-1.48 1.094c-.333.246-.804.175-1.05-.158-.246-.334-.176-.804.158-1.05l1.48-1.095c.803-.592 1.327-1.463 1.476-2.45.148-.988-.098-1.975-.69-2.778-1.225-1.656-3.572-2.01-5.23-.784l-3.53 2.608c-.802.593-1.326 1.464-1.475 2.45-.15.99.097 1.975.69 2.778.498.675 1.187 1.15 1.992 1.377.4.114.633.528.52.928-.092.33-.394.547-.722.547z"></path><path d="M7.27 22.054c-1.61 0-3.197-.735-4.225-2.125-.832-1.127-1.176-2.51-.968-3.894s.943-2.605 2.07-3.438l1.478-1.094c.334-.245.805-.175 1.05.158s.177.804-.157 1.05l-1.48 1.095c-.803.593-1.326 1.464-1.475 2.45-.148.99.097 1.975.69 2.778 1.225 1.657 3.57 2.01 5.23.785l3.528-2.608c1.658-1.225 2.01-3.57.785-5.23-.498-.674-1.187-1.15-1.992-1.376-.4-.113-.633-.527-.52-.927.112-.4.528-.63.926-.522 1.13.318 2.096.986 2.794 1.932 1.717 2.324 1.224 5.612-1.1 7.33l-3.53 2.608c-.933.693-2.023 1.026-3.105 1.026z"></path></g></svg>
-                                                <span>billoard.com</span>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="post-tweet-group mr-t-10">
-                                    <div class="tweet-reply post-tweet-group fl-1">
-                                        <div class="icon-reply tweet-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <g>
-                                                    <path
-                                                        d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l
-                                                4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
-                                                    </path>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div class="tweet-number mr-l-10">15</div>
-                                    </div>
-                                    <div class="tweet-retweet post-tweet-group">
-                                        <div class="icon-retweet tweet-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <g>
-                                                    <path
-                                                        d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
-                                                    </path>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div class="tweet-number mr-l-10">37</div>
-                                    </div>
-                                    <div class="tweet-like post-tweet-group">
-                                        <div class="icon-like tweet-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <g>
-                                                    <path
-                                                        d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
-                                                    </path>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div class="tweet-number mr-l-10">415</div>
-                                    </div>
-                                    <div class="tweet-share">
-                                        <div class="icon-share tweet-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <g>
-                                                    <path
-                                                        d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
-                                                    </path>
-                                                    <path
-                                                        d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
-                                                    </path>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="main-wrapper-left-tweet">
+                        <div class="main-wrapper-left-tweet__avatar">
+                            <img src="https://abs.twimg.com/sticky/default_profile_images/default_profile_reasonably_small.png"
+                                alt="">
                         </div>
-                    </article>
-                    <div class="space"></div>
-                    <article class="main-timeline">
-                        <div class="main-timeline-wrapper">
-                            <div class="main-timeline-head main-wrapper-left-head group-item pd-l-r-15 bor-b h-53">
-                                <div class="main-timeline-head__txt main-wrapper-left-head__txt fs-19 fw-600">Who to follow</div>
-                                <div class="main-timeline-head__icon">
-                                    <div class="post-arrow-down">
-                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 512.011 512.011"
-                                            style="enable-background:new 0 0 512.011 512.011;" xml:space="preserve">
+                        <div class="main-wrapper-left-tweet__content mr-r-l-5">
+                            <input class="main-wrapper-left-tweet__content__input" type="text"
+                                placeholder="What's happening?">
+                            <div class="tweet__content__icons">
+                                <div class="tweet__content__icons-left">
+                                    <div class="tweet-add-photo tweet">
+                                        <svg xmlns="http://www.w3.org/2000/svg">
                                             <g>
-                                                <g>
-                                                    <path d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0
-        s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667
-        C514.096,145.416,514.096,131.933,505.755,123.592z" />
-                                                </g>
-                                            </g>
-                                            <g>
-                                            </g>
-                                            <g>
-                                            </g>
-                                            <g>
-                                            </g>
-                                            <g>
-                                            </g>
-                                            <g>
-                                            </g>
-                                            <g>
-                                            </g>
-                                            <g>
-                                            </g>
-                                            <g>
-                                            </g>
-                                            <g>
-                                            </g>
-                                            <g>
-                                            </g>
-                                            <g>
-                                            </g>
-                                            <g>
-                                            </g>
-                                            <g>
-                                            </g>
-                                            <g>
-                                            </g>
-                                            <g>
+                                                <path
+                                                    d="M19.75 2H4.25C3.01 2 2 3.01 2 4.25v15.5C2 20.99 3.01 22 4.25 22h15.5c1.24 0 2.25-1.01 2.25-2.25V4.25C22 3.01 20.99 2 19.75 2zM4.25 3.5h15.5c.413 0 .75.337.75.75v9.676l-3.858-3.858c-.14-.14-.33-.22-.53-.22h-.003c-.2 0-.393.08-.532.224l-4.317 4.384-1.813-1.806c-.14-.14-.33-.22-.53-.22-.193-.03-.395.08-.535.227L3.5 17.642V4.25c0-.413.337-.75.75-.75zm-.744 16.28l5.418-5.534 6.282 6.254H4.25c-.402 0-.727-.322-.744-.72zm16.244.72h-2.42l-5.007-4.987 3.792-3.85 4.385 4.384v3.703c0 .413-.337.75-.75.75z">
+                                                </path>
+                                                <circle cx="8.868" cy="8.309" r="1.542"></circle>
                                             </g>
                                         </svg>
                                     </div>
-                                </div>
-                            </div>
-                            <!-- List users who to follow -->
-                            <div class="main-timeline-follow bor-b pd-l-r-15 pd-10">
-                                <div class="main-timeline-user">
-                                    <div class="main-timeline-user-avatar mr-l-r-5">
-                                        <img class="bor-r-50"
-                                            src="https://pbs.twimg.com/profile_images/1223183340171415552/XQcxk5Zb_bigger.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="main-timeline-user-content mr-r-l-5">
-                                        <div class="content__head">
-                                            <div class="content__head-left">
-                                                <div class="content__head-headding">
-                                                    <div class="content__head-username">
-                                                        <h4>Elon Musk</h4>
-                                                        <svg width="22" height="22" fill="rgb(29, 161, 242, 1.0)">
-                                                            <g>
-                                                                <path
-                                                                    d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z">
-                                                                </path>
-                                                            </g>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="content__head-hagtag-user">
-                                                        <span>@eleonmusk</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="content__head-right btn-follow">
-                                                <p>Follow</p>
-                                            </div>
-                                        </div>
-                                        <div class="content__txt pd-t-5">
-                                            <div class="content__txt-intro">
-                                                <span><img width="18px" height="18px" alt="Rocket" draggable="false"
-                                                        src="https://abs-0.twimg.com/emoji/v2/svg/1f680.svg"></span>
-                                                <span><img width="18px" height="18px" alt="Rocket" draggable="false"
-                                                        src="https://abs-0.twimg.com/emoji/v2/svg/1f6f0.svg"></span>
-                                                <span><img width="18px" height="18px" alt="Rocket" draggable="false"
-                                                        src="https://abs-0.twimg.com/emoji/v2/svg/2600.svg"></span>
-                                                <span><img width="18px" height="18px" alt="Rocket" draggable="false"
-                                                        src="https://abs-0.twimg.com/emoji/v2/svg/1f698.svg"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="main-timeline-follow bor-b pd-l-r-15 pd-10">
-                                <div class="main-timeline-followby">
-                                    <div class="follower-avatar mr-l-r-5">
-                                        <svg width="19px" height="19px">
+                                    <div class="tweet-add-gift tweet">
+                                        <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg">
                                             <g>
                                                 <path
-                                                    d="M12.225 12.165c-1.356 0-2.872-.15-3.84-1.256-.814-.93-1.077-2.368-.805-4.392.38-2.826 2.116-4.513 4.646-4.513s4.267 1.687 4.646 4.513c.272 2.024.008 3.46-.806 4.392-.97 1.106-2.485 1.255-3.84 1.255zm5.849 9.85H6.376c-.663 0-1.25-.28-1.65-.786-.422-.534-.576-1.27-.41-1.968.834-3.53 4.086-5.997 7.908-5.997s7.074 2.466 7.91 5.997c.164.698.01 1.434-.412 1.967-.4.505-.985.785-1.648.785z">
+                                                    d="M19 10.5V8.8h-4.4v6.4h1.7v-2h2v-1.7h-2v-1H19zm-7.3-1.7h1.7v6.4h-1.7V8.8zm-3.6 1.6c.4 0 .9.2 1.2.5l1.2-1C9.9 9.2 9 8.8 8.1 8.8c-1.8 0-3.2 1.4-3.2 3.2s1.4 3.2 3.2 3.2c1 0 1.8-.4 2.4-1.1v-2.5H7.7v1.2h1.2v.6c-.2.1-.5.2-.8.2-.9 0-1.6-.7-1.6-1.6 0-.8.7-1.6 1.6-1.6z">
+                                                </path>
+                                                <path
+                                                    d="M20.5 2.02h-17c-1.24 0-2.25 1.007-2.25 2.247v15.507c0 1.238 1.01 2.246 2.25 2.246h17c1.24 0 2.25-1.008 2.25-2.246V4.267c0-1.24-1.01-2.247-2.25-2.247zm.75 17.754c0 .41-.336.746-.75.746h-17c-.414 0-.75-.336-.75-.746V4.267c0-.412.336-.747.75-.747h17c.414 0 .75.335.75.747v15.507z">
                                                 </path>
                                             </g>
                                         </svg>
                                     </div>
-                                    <div class="follower-name mr-r-l-5">
-                                        <span>Hillary Clinton follows</span>
+                                    <div class="tweet-add-poll tweet">
+                                        <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg">
+                                            <g>
+                                                <path
+                                                    d="M20.222 9.16h-1.334c.015-.09.028-.182.028-.277V6.57c0-.98-.797-1.777-1.778-1.777H3.5V3.358c0-.414-.336-.75-.75-.75s-.75.336-.75.75V20.83c0 .415.336.75.75.75s.75-.335.75-.75v-1.434h10.556c.98 0 1.778-.797 1.778-1.777v-2.313c0-.095-.014-.187-.028-.278h4.417c.98 0 1.778-.798 1.778-1.778v-2.31c0-.983-.797-1.78-1.778-1.78zM17.14 6.293c.152 0 .277.124.277.277v2.31c0 .154-.125.28-.278.28H3.5V6.29h13.64zm-2.807 9.014v2.312c0 .153-.125.277-.278.277H3.5v-2.868h10.556c.153 0 .277.126.277.28zM20.5 13.25c0 .153-.125.277-.278.277H3.5V10.66h16.722c.153 0 .278.124.278.277v2.313z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="tweet-add-emoji tweet">
+                                        <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg">
+                                            <g>
+                                                <path
+                                                    d="M12 22.75C6.072 22.75 1.25 17.928 1.25 12S6.072 1.25 12 1.25 22.75 6.072 22.75 12 17.928 22.75 12 22.75zm0-20C6.9 2.75 2.75 6.9 2.75 12S6.9 21.25 12 21.25s9.25-4.15 9.25-9.25S17.1 2.75 12 2.75z">
+                                                </path>
+                                                <path
+                                                    d="M12 17.115c-1.892 0-3.633-.95-4.656-2.544-.224-.348-.123-.81.226-1.035.348-.226.812-.124 1.036.226.747 1.162 2.016 1.855 3.395 1.855s2.648-.693 3.396-1.854c.224-.35.688-.45 1.036-.225.35.224.45.688.226 1.036-1.025 1.594-2.766 2.545-4.658 2.545z">
+                                                </path>
+                                                <circle cx="14.738" cy="9.458" r="1.478"></circle>
+                                                <circle cx="9.262" cy="9.458" r="1.478"></circle>
+                                            </g>
+                                        </svg>
                                     </div>
                                 </div>
-                                <div class="main-timeline-user">
-                                    <div class="main-timeline-user-avatar mr-l-r-5">
-                                        <img class="bor-r-50"
-                                            src="https://pbs.twimg.com/profile_images/1097820307388334080/9ddg5F6v_bigger.png"
-                                            alt="">
-                                    </div>
-                                    <div class="main-timeline-user-content mr-r-l-5">
-                                        <div class="content__head">
-                                            <div class="content__head-left">
-                                                <div class="content__head-headding">
-                                                    <div class="content__head-username">
-                                                        <h4>bernie Sanders</h4>
-                                                        <svg width="22" height="22" fill="rgb(29, 161, 242, 1.0)">
-                                                            <g>
-                                                                <path
-                                                                    d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z">
-                                                                </path>
-                                                            </g>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="content__head-hagtag-user">
-                                                        <span>@BernieSanders</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="content__head-right btn-follow">
-                                                <p>Follow</p>
-                                            </div>
-                                        </div>
-                                        <div class="content__txt pd-t-5">
-                                            <div class="content__txt-intro">
-                                                <!-- <img width="18px" height="18px" alt="Rocket" draggable="false" src="https://abs-0.twimg.com/emoji/v2/svg/1f680.svg"> -->
-                                                <span>U.S. Senator from Vermont and candidate for President of the
-                                                    United States.</span>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="tweet__content__icons-right">
+                                    <button class="btn">tweet</button>
                                 </div>
-                            </div>
-                            <div class="main-timeline-follow bor-b pd-l-r-15 pd-10">
-                                <div class="main-timeline-user">
-                                    <div class="main-timeline-user-avatar mr-l-r-5">
-                                        <img class="bor-r-50"
-                                            src="https://pbs.twimg.com/profile_images/508960761826131968/LnvhR8ED_bigger.png"
-                                            alt="">
-                                    </div>
-                                    <div class="main-timeline-user-content mr-r-l-5">
-                                        <div class="content__head">
-                                            <div class="content__head-left">
-                                                <div class="content__head-headding">
-                                                    <div class="content__head-username">
-                                                        <h4>CNN</h4>
-                                                        <svg width="22" height="22" fill="rgb(29, 161, 242, 1.0)">
-                                                            <g>
-                                                                <path
-                                                                    d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z">
-                                                                </path>
-                                                            </g>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="content__head-hagtag-user">
-                                                        <span>@CNN</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="content__head-right btn-follow">
-                                                <p>Follow</p>
-                                            </div>
-                                        </div>
-                                        <div class="content__txt pd-t-5">
-                                            <div class="content__txt-intro">
-                                                <!-- <img width="18px" height="18px" alt="Rocket" draggable="false" src="https://abs-0.twimg.com/emoji/v2/svg/1f680.svg"> -->
-                                                <span>It’s our job to
-                                                    <a href="#">#GoThere</a>
-                                                    & tell the most difficult stories.
-                                                    Join us! For more breaking news updates follow
-                                                    <a href="">@CNNBRK</a>
-                                                    & Download our app
-                                                </span>
-                                                <a href="">cnn.com/apps</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- List users who to follow -->
-                            <div class="main-timeline-follow bor-b pd-l-r-15 pd-10 show-more">
-                                <a href="#">Show more</a>
                             </div>
                         </div>
-                    </article>
+                    </div>
                     <div class="space"></div>
-                    <article class="main-post pd-l-r-15 pd-b-10 border-post">
-                        <div class="main-post-pdtop"></div>
-                        <div class="main-post-content">
-                            <div class="main-post-content-avatar">
-                                <img alt="" draggable="true"
-                                    src="https://pbs.twimg.com/profile_images/1245170515666485250/BAWlH6TW_bigger.jpg">
-                            </div>
-                            <div class="main-post-content-post mr-r-l-5">
-                                <div class="post-head">
-                                    <div class="post-head-left">
-                                        <div class="post-head-left user">
-                                            <span>SBS</span>
+                    <section class='main-posts'>
+                        <article class="main-post pd-l-r-15 pd-b-10 border-post">
+                            <div class="main-post-pdtop"></div>
+                            <div class="main-post-content">
+                                <div class="main-post-content-avatar">
+                                    <img alt="" draggable="true"
+                                        src="https://pbs.twimg.com/profile_images/1148300782242095105/9vWg5A_I_bigger.png"
+                                        class="css-9pa8cd">
+                                </div>
+                                <div class="main-post-content-post mr-r-l-5">
+                                    <div class="post-head">
+                                        <div class="post-head-left">
+                                            <div class="post-head-left user">
+                                                <span>billboard</span>
+                                            </div>
+                                            <div class="post-head-tick mr-l-5">
+                                                <svg width="22" height="22" fill="rgb(29, 161, 242, 1.0)">
+                                                    <g>
+                                                        <path
+                                                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="post-head-user mr-l-5">
+                                                <span>@billboard</span>
+                                            </div>
+                                            <div class="post-line mr-l-5">
+                                                <span>-</span>
+                                            </div>
+                                            <div class="post-time mr-l-5"><span>12h</span></div>
                                         </div>
-                                        <div class="post-head-tick mr-l-5">
-                                            <svg width="22" height="22" fill="rgb(29, 161, 242, 1.0)">
-                                                <g>
-                                                    <path
-                                                        d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z">
-                                                    </path>
-                                                </g>
-                                            </svg>
+                                        <div class="post-head-right">
+                                            <div class="post-arrow-down">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 512.011 512.011"
+                                                    style="enable-background:new 0 0 512.011 512.011;" xml:space="preserve">
+                                                    <g>
+                                                        <g>
+                                                            <path d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0
+                s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667
+                C514.096,145.416,514.096,131.933,505.755,123.592z" />
+                                                        </g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                </svg>
+                                            </div>
                                         </div>
-                                        <div class="post-head-user mr-l-5">
-                                            <span>@SBSNOW</span>
-                                        </div>
-                                        <div class="post-line mr-l-5">
-                                            <span>-</span>
-                                        </div>
-                                        <div class="post-time mr-l-5"><span>7h</span></div>
                                     </div>
-                                    <div class="post-head-right">
+                                    <div class="post_txt">
+                                        <p>Elon Musk and Grime's new bundle of joy sent the Internet inro a spiral
+                                            of confusion
+                                        </p>
+                                    </div>
+                                    <div class="post-link">
+                                        <a target="_blank" href="https://www.billboard.com/articles/news/9373084/grimes-elon-musks-unusual-baby-name-isnt-valid-in-california">
+                                            <div class="post-images">
+                                                <img src="https://pbs.twimg.com/card_img/1257983869883744258/9qnsiWHQ?format=jpg&name=small"
+                                                    alt="">
+                                            </div>
+                                            <div class="post-txt">
+                                                <p class="post-txt__title">Grimes & Elon Musk's Unsual Baby Name
+                                                    Isn't Valid in California
+                                                </p>
+                                                <p>The moniker won't be valid in the state of California
+                                                    where the baby was presumably born
+                                                </p>
+                                                <p>
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    width="16.25px" 
+                                                    height="16.25px"><g style="transform: scale(0.7)"><path d="M11.96 14.945c-.067 0-.136-.01-.203-.027-1.13-.318-2.097-.986-2.795-1.932-.832-1.125-1.176-2.508-.968-3.893s.942-2.605 2.068-3.438l3.53-2.608c2.322-1.716 5.61-1.224 7.33 1.1.83 1.127 1.175 2.51.967 3.895s-.943 2.605-2.07 3.438l-1.48 1.094c-.333.246-.804.175-1.05-.158-.246-.334-.176-.804.158-1.05l1.48-1.095c.803-.592 1.327-1.463 1.476-2.45.148-.988-.098-1.975-.69-2.778-1.225-1.656-3.572-2.01-5.23-.784l-3.53 2.608c-.802.593-1.326 1.464-1.475 2.45-.15.99.097 1.975.69 2.778.498.675 1.187 1.15 1.992 1.377.4.114.633.528.52.928-.092.33-.394.547-.722.547z"></path><path d="M7.27 22.054c-1.61 0-3.197-.735-4.225-2.125-.832-1.127-1.176-2.51-.968-3.894s.943-2.605 2.07-3.438l1.478-1.094c.334-.245.805-.175 1.05.158s.177.804-.157 1.05l-1.48 1.095c-.803.593-1.326 1.464-1.475 2.45-.148.99.097 1.975.69 2.778 1.225 1.657 3.57 2.01 5.23.785l3.528-2.608c1.658-1.225 2.01-3.57.785-5.23-.498-.674-1.187-1.15-1.992-1.376-.4-.113-.633-.527-.52-.927.112-.4.528-.63.926-.522 1.13.318 2.096.986 2.794 1.932 1.717 2.324 1.224 5.612-1.1 7.33l-3.53 2.608c-.933.693-2.023 1.026-3.105 1.026z"></path></g></svg>
+                                                    <span>billoard.com</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="post-tweet-group mr-t-10">
+                                        <div class="tweet-reply post-tweet-group fl-1">
+                                            <div class="icon-reply tweet-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g>
+                                                        <path
+                                                            d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l
+                                                    4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="tweet-number mr-l-10">15</div>
+                                        </div>
+                                        <div class="tweet-retweet post-tweet-group">
+                                            <div class="icon-retweet tweet-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g>
+                                                        <path
+                                                            d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="tweet-number mr-l-10">37</div>
+                                        </div>
+                                        <div class="tweet-like post-tweet-group">
+                                            <div class="icon-like tweet-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g>
+                                                        <path
+                                                            d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="tweet-number mr-l-10">415</div>
+                                        </div>
+                                        <div class="tweet-share">
+                                            <div class="icon-share tweet-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g>
+                                                        <path
+                                                            d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
+                                                        </path>
+                                                        <path
+                                                            d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="space"></div>
+                        <article class="main-timeline">
+                            <div class="main-timeline-wrapper">
+                                <div class="main-timeline-head main-wrapper-left-head group-item pd-l-r-15 bor-b h-53">
+                                    <div class="main-timeline-head__txt main-wrapper-left-head__txt fs-19 fw-600">Who to follow</div>
+                                    <div class="main-timeline-head__icon">
                                         <div class="post-arrow-down">
                                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -692,8 +465,8 @@
                                                 <g>
                                                     <g>
                                                         <path d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0
-			s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667
-			C514.096,145.416,514.096,131.933,505.755,123.592z" />
+            s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667
+            C514.096,145.416,514.096,131.933,505.755,123.592z" />
                                                     </g>
                                                 </g>
                                                 <g>
@@ -730,411 +503,1025 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="post_txt">
-                                    <p>지창욱X김유정 '편의점 샛별이'
-                                        24시간 논스톱 코믹 맛집_6월 12일 OPEN
-                                        <br><br>
-                                        SBS 새 금토드라마 '편의점 샛별이'
-                                        <br>☞ 6월 12일 금요일 밤 10시 첫방송
-                                    </p>
-                                    <br>
-                                    <p>
-                                        <span><a href="#">#도산분식</a></span><span><a href="">#땡스피자</a></span>
-                                    </p>
+                                <!-- List users who to follow -->
+                                <div class="main-timeline-follow bor-b pd-l-r-15 pd-10">
+                                    <div class="main-timeline-user">
+                                        <div class="main-timeline-user-avatar mr-l-r-5">
+                                            <img class="bor-r-50"
+                                                src="https://pbs.twimg.com/profile_images/1223183340171415552/XQcxk5Zb_bigger.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="main-timeline-user-content mr-r-l-5">
+                                            <div class="content__head">
+                                                <div class="content__head-left">
+                                                    <div class="content__head-headding">
+                                                        <div class="content__head-username">
+                                                            <h4>Elon Musk</h4>
+                                                            <svg width="22" height="22" fill="rgb(29, 161, 242, 1.0)">
+                                                                <g>
+                                                                    <path
+                                                                        d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z">
+                                                                    </path>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="content__head-hagtag-user">
+                                                            <span>@eleonmusk</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content__head-right btn-follow">
+                                                    <p>Follow</p>
+                                                </div>
+                                            </div>
+                                            <div class="content__txt pd-t-5">
+                                                <div class="content__txt-intro">
+                                                    <span><img width="18px" height="18px" alt="Rocket" draggable="false"
+                                                            src="https://abs-0.twimg.com/emoji/v2/svg/1f680.svg"></span>
+                                                    <span><img width="18px" height="18px" alt="Rocket" draggable="false"
+                                                            src="https://abs-0.twimg.com/emoji/v2/svg/1f6f0.svg"></span>
+                                                    <span><img width="18px" height="18px" alt="Rocket" draggable="false"
+                                                            src="https://abs-0.twimg.com/emoji/v2/svg/2600.svg"></span>
+                                                    <span><img width="18px" height="18px" alt="Rocket" draggable="false"
+                                                            src="https://abs-0.twimg.com/emoji/v2/svg/1f698.svg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="post-images">
-                                    <img src="https://pbs.twimg.com/media/EXdXaS1U4AAN8Gc?format=jpg&name=small" alt="">
-                                    
+                                <div class="main-timeline-follow bor-b pd-l-r-15 pd-10">
+                                    <div class="main-timeline-followby">
+                                        <div class="follower-avatar mr-l-r-5">
+                                            <svg width="19px" height="19px">
+                                                <g>
+                                                    <path
+                                                        d="M12.225 12.165c-1.356 0-2.872-.15-3.84-1.256-.814-.93-1.077-2.368-.805-4.392.38-2.826 2.116-4.513 4.646-4.513s4.267 1.687 4.646 4.513c.272 2.024.008 3.46-.806 4.392-.97 1.106-2.485 1.255-3.84 1.255zm5.849 9.85H6.376c-.663 0-1.25-.28-1.65-.786-.422-.534-.576-1.27-.41-1.968.834-3.53 4.086-5.997 7.908-5.997s7.074 2.466 7.91 5.997c.164.698.01 1.434-.412 1.967-.4.505-.985.785-1.648.785z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="follower-name mr-r-l-5">
+                                            <span>Hillary Clinton follows</span>
+                                        </div>
+                                    </div>
+                                    <div class="main-timeline-user">
+                                        <div class="main-timeline-user-avatar mr-l-r-5">
+                                            <img class="bor-r-50"
+                                                src="https://pbs.twimg.com/profile_images/1097820307388334080/9ddg5F6v_bigger.png"
+                                                alt="">
+                                        </div>
+                                        <div class="main-timeline-user-content mr-r-l-5">
+                                            <div class="content__head">
+                                                <div class="content__head-left">
+                                                    <div class="content__head-headding">
+                                                        <div class="content__head-username">
+                                                            <h4>bernie Sanders</h4>
+                                                            <svg width="22" height="22" fill="rgb(29, 161, 242, 1.0)">
+                                                                <g>
+                                                                    <path
+                                                                        d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z">
+                                                                    </path>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="content__head-hagtag-user">
+                                                            <span>@BernieSanders</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content__head-right btn-follow">
+                                                    <p>Follow</p>
+                                                </div>
+                                            </div>
+                                            <div class="content__txt pd-t-5">
+                                                <div class="content__txt-intro">
+                                                    <!-- <img width="18px" height="18px" alt="Rocket" draggable="false" src="https://abs-0.twimg.com/emoji/v2/svg/1f680.svg"> -->
+                                                    <span>U.S. Senator from Vermont and candidate for President of the
+                                                        United States.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="post-tweet-group mr-t-10">
-                                    <div class="tweet-reply post-tweet-group fl-1">
-                                        <div class="icon-reply tweet-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <g>
-                                                    <path
-                                                        d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l
-                                                4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
-                                                    </path>
-                                                </g>
-                                            </svg>
+                                <div class="main-timeline-follow bor-b pd-l-r-15 pd-10">
+                                    <div class="main-timeline-user">
+                                        <div class="main-timeline-user-avatar mr-l-r-5">
+                                            <img class="bor-r-50"
+                                                src="https://pbs.twimg.com/profile_images/508960761826131968/LnvhR8ED_bigger.png"
+                                                alt="">
                                         </div>
-                                        <div class="tweet-number mr-l-10">124</div>
-                                    </div>
-                                    <div class="tweet-retweet post-tweet-group">
-                                        <div class="icon-retweet tweet-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <g>
-                                                    <path
-                                                        d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
-                                                    </path>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div class="tweet-number mr-l-10">1.8K</div>
-                                    </div>
-                                    <div class="tweet-like post-tweet-group">
-                                        <div class="icon-like tweet-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <g>
-                                                    <path
-                                                        d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
-                                                    </path>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div class="tweet-number mr-l-10">2.7K</div>
-                                    </div>
-                                    <div class="tweet-share">
-                                        <div class="icon-share tweet-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <g>
-                                                    <path
-                                                        d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
-                                                    </path>
-                                                    <path
-                                                        d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
-                                                    </path>
-                                                </g>
-                                            </svg>
+                                        <div class="main-timeline-user-content mr-r-l-5">
+                                            <div class="content__head">
+                                                <div class="content__head-left">
+                                                    <div class="content__head-headding">
+                                                        <div class="content__head-username">
+                                                            <h4>CNN</h4>
+                                                            <svg width="22" height="22" fill="rgb(29, 161, 242, 1.0)">
+                                                                <g>
+                                                                    <path
+                                                                        d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z">
+                                                                    </path>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="content__head-hagtag-user">
+                                                            <span>@CNN</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content__head-right btn-follow">
+                                                    <p>Follow</p>
+                                                </div>
+                                            </div>
+                                            <div class="content__txt pd-t-5">
+                                                <div class="content__txt-intro">
+                                                    <!-- <img width="18px" height="18px" alt="Rocket" draggable="false" src="https://abs-0.twimg.com/emoji/v2/svg/1f680.svg"> -->
+                                                    <span>It’s our job to
+                                                        <a href="#">#GoThere</a>
+                                                        & tell the most difficult stories.
+                                                        Join us! For more breaking news updates follow
+                                                        <a href="">@CNNBRK</a>
+                                                        & Download our app
+                                                    </span>
+                                                    <a href="">cnn.com/apps</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                </div>
+                                <!-- List users who to follow -->
+                                <div class="main-timeline-follow bor-b pd-l-r-15 pd-10 show-more">
+                                    <a href="#">Show more</a>
                                 </div>
                             </div>
-                        </div>
-                    </article>
-                    <article class="main-post pd-l-r-15 pd-b-10 border-post">
-                        <div class="main-post-pdtop"></div>
-                        <div class="main-post-content">
-                            <div class="main-post-content-avatar">
-                                <img alt="" draggable="true"
-                                    src="https://pbs.twimg.com/profile_images/1235101876216971265/rpJYCwN__reasonably_small.jpg">
-                            </div>
-                            <div class="main-post-content-post mr-r-l-5">
-                                <div class="post-head">
-                                    <div class="post-head-left">
-                                        <div class="post-head-left user">
-                                            <span>Sandara Park</span>
-                                        </div>
-                                        <div class="post-head-tick mr-l-5">
-                                            <svg width="22" height="22" fill="rgb(29, 161, 242, 1.0)">
-                                                <g>
-                                                    <path
-                                                        d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z">
-                                                    </path>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div class="post-head-user mr-l-5">
-                                            <span>@krungy21</span>
-                                        </div>
-                                        <div class="post-line mr-l-5">
-                                            <span>-</span>
-                                        </div>
-                                        <div class="post-time mr-l-5"><span>1m</span></div>
-                                    </div>
-                                    <div class="post-head-right">
-                                        <div class="post-arrow-down">
-                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                viewBox="0 0 512.011 512.011"
-                                                style="enable-background:new 0 0 512.011 512.011;" xml:space="preserve">
-                                                <g>
+                        </article>
+                        <div class="space"></div>
+                        <article class="main-post pd-l-r-15 pd-b-10 border-post">
+                            <div class="main-post-pdtop"></div>
+                            <div class="main-post-content">
+                                <div class="main-post-content-avatar">
+                                    <img alt="" draggable="true"
+                                        src="https://pbs.twimg.com/profile_images/1245170515666485250/BAWlH6TW_bigger.jpg">
+                                </div>
+                                <div class="main-post-content-post mr-r-l-5">
+                                    <div class="post-head">
+                                        <div class="post-head-left">
+                                            <div class="post-head-left user">
+                                                <span>SBS</span>
+                                            </div>
+                                            <div class="post-head-tick mr-l-5">
+                                                <svg width="22" height="22" fill="rgb(29, 161, 242, 1.0)">
                                                     <g>
-                                                        <path d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0
-			s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667
-			C514.096,145.416,514.096,131.933,505.755,123.592z" />
+                                                        <path
+                                                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z">
+                                                        </path>
                                                     </g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                            </svg>
+                                                </svg>
+                                            </div>
+                                            <div class="post-head-user mr-l-5">
+                                                <span>@SBSNOW</span>
+                                            </div>
+                                            <div class="post-line mr-l-5">
+                                                <span>-</span>
+                                            </div>
+                                            <div class="post-time mr-l-5"><span>7h</span></div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="post_txt">
-                                    <p>어제는 밥심으로 더 힘이 나서 노래가 너무 좋았다는 배우들의 어떤 후기
-                                        지난주에 밥을 안먹고 무대에 올라가서 공연중에 당이 떨어졌던 아찔한 경험을 했기에
-                                        역시 밥을 먹어야돼! 밥이 보약이야! 너무 말랐어~ ㅋㅋㅋ 밥 잘 챙겨드세요~
-                                        <span><a href="#">#도산분식</a></span><span><a href="">#땡스피자</a></span>
-                                    </p>
-                                </div>
-                                <div class="post-images">
-                                    <div class="post-images list-images">
-                                        <img src="https://pbs.twimg.com/media/EWViRrdUMAE79WV?format=jpg&name=small"
-                                            alt="">
-                                        <img src="https://pbs.twimg.com/media/EWViRrdUMAE79WV?format=jpg&name=small"
-                                            alt="">
-                                        <img src="https://pbs.twimg.com/media/EWViRrdUMAE79WV?format=jpg&name=small"
-                                            alt="">
-                                        <img src="https://pbs.twimg.com/media/EWViRrdUMAE79WV?format=jpg&name=small"
-                                            alt="">
-                                    </div>
-                                </div>
-                                <div class="post-tweet-group mr-t-10">
-                                    <div class="tweet-reply post-tweet-group fl-1">
-                                        <div class="icon-reply tweet-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <g>
-                                                    <path
-                                                        d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l
-                                                4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
-                                                    </path>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div class="tweet-number mr-l-10">124</div>
-                                    </div>
-                                    <div class="tweet-retweet post-tweet-group">
-                                        <div class="icon-retweet tweet-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <g>
-                                                    <path
-                                                        d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
-                                                    </path>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div class="tweet-number mr-l-10">1.8K</div>
-                                    </div>
-                                    <div class="tweet-like post-tweet-group">
-                                        <div class="icon-like tweet-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <g>
-                                                    <path
-                                                        d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
-                                                    </path>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div class="tweet-number mr-l-10">2.7K</div>
-                                    </div>
-                                    <div class="tweet-share">
-                                        <div class="icon-share tweet-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <g>
-                                                    <path
-                                                        d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
-                                                    </path>
-                                                    <path
-                                                        d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
-                                                    </path>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="main-post pd-l-r-15 pd-b-10 border-post">
-                        <div class="main-post-pdtop"></div>
-                        <div class="main-post-content">
-                            <div class="main-post-content-avatar">
-                                <img alt="" draggable="true"
-                                    src="https://pbs.twimg.com/profile_images/1111088188162891776/RIclWrpE_bigger.png"
-                                    class="css-9pa8cd">
-                            </div>
-                            <div class="main-post-content-post mr-r-l-5">
-                                <div class="post-head">
-                                    <div class="post-head-left">
-                                        <div class="post-head-left user">
-                                            <span>Soompi</span>
-                                        </div>
-                                        <div class="post-head-tick mr-l-5">
-                                            <svg width="22" height="22" fill="rgb(29, 161, 242, 1.0)">
-                                                <g>
-                                                    <path
-                                                        d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z">
-                                                    </path>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div class="post-head-user mr-l-5">
-                                            <span>@soompi</span>
-                                        </div>
-                                        <div class="post-line mr-l-5">
-                                            <span>-</span>
-                                        </div>
-                                        <div class="post-time mr-l-5"><span>1h</span></div>
-                                    </div>
-                                    <div class="post-head-right">
-                                        <div class="post-arrow-down">
-                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                viewBox="0 0 512.011 512.011"
-                                                style="enable-background:new 0 0 512.011 512.011;" xml:space="preserve">
-                                                <g>
+                                        <div class="post-head-right">
+                                            <div class="post-arrow-down">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 512.011 512.011"
+                                                    style="enable-background:new 0 0 512.011 512.011;" xml:space="preserve">
                                                     <g>
-                                                        <path d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0
-			s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667
-			C514.096,145.416,514.096,131.933,505.755,123.592z" />
+                                                        <g>
+                                                            <path d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0
+                s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667
+                C514.096,145.416,514.096,131.933,505.755,123.592z" />
+                                                        </g>
                                                     </g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                                <g>
-                                                </g>
-                                            </svg>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="post_txt">
-                                    <p><span><a href="#">#LeeMinJung</a></span>
-                                        <span><a href="">#LeeSangYeob</a></span>, And
-                                        <span><a href="">#Alex</a></span> Meet Amid Tension In
-                                        <span>"<a href="">#OnceAgain</a>"</span>
-                                    </p>
-                                    <a href="https://t.co/PyQ4g5qGmS?amp=1">soompi.com/article/139635</a>
-
-                                </div>
-                                <div class="post-images">
-                                    <img src="https://pbs.twimg.com/media/EWWrs8TUwAE-sZA?format=jpg&name=small" alt="">
-                                </div>
-                                <div class="post-tweet-group mr-t-10">
-                                    <div class="tweet-reply post-tweet-group fl-1">
-                                        <div class="icon-reply tweet-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <g>
-                                                    <path
-                                                        d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l
-                                                4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
-                                                    </path>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div class="tweet-number mr-l-10">124</div>
+                                    <div class="post_txt">
+                                        <p>지창욱X김유정 '편의점 샛별이'
+                                            24시간 논스톱 코믹 맛집_6월 12일 OPEN
+                                            <br><br>
+                                            SBS 새 금토드라마 '편의점 샛별이'
+                                            <br>☞ 6월 12일 금요일 밤 10시 첫방송
+                                        </p>
+                                        <br>
+                                        <p>
+                                            <span><a href="#">#도산분식</a></span><span><a href="">#땡스피자</a></span>
+                                        </p>
                                     </div>
-                                    <div class="tweet-retweet post-tweet-group">
-                                        <div class="icon-retweet tweet-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <g>
-                                                    <path
-                                                        d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
-                                                    </path>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div class="tweet-number mr-l-10">1.8K</div>
+                                    <div class="post-images">
+                                        <img src="https://pbs.twimg.com/media/EXdXaS1U4AAN8Gc?format=jpg&name=small" alt="">
+                                        
                                     </div>
-                                    <div class="tweet-like post-tweet-group">
-                                        <div class="icon-like tweet-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <g>
-                                                    <path
-                                                        d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
-                                                    </path>
-                                                </g>
-                                            </svg>
+                                    <div class="post-tweet-group mr-t-10">
+                                        <div class="tweet-reply post-tweet-group fl-1">
+                                            <div class="icon-reply tweet-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g>
+                                                        <path
+                                                            d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l
+                                                    4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="tweet-number mr-l-10">124</div>
                                         </div>
-                                        <div class="tweet-number mr-l-10">2.7K</div>
-                                    </div>
-                                    <div class="tweet-share">
-                                        <div class="icon-share tweet-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                <g>
-                                                    <path
-                                                        d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
-                                                    </path>
-                                                    <path
-                                                        d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
-                                                    </path>
-                                                </g>
-                                            </svg>
+                                        <div class="tweet-retweet post-tweet-group">
+                                            <div class="icon-retweet tweet-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g>
+                                                        <path
+                                                            d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="tweet-number mr-l-10">1.8K</div>
+                                        </div>
+                                        <div class="tweet-like post-tweet-group">
+                                            <div class="icon-like tweet-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g>
+                                                        <path
+                                                            d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="tweet-number mr-l-10">2.7K</div>
+                                        </div>
+                                        <div class="tweet-share">
+                                            <div class="icon-share tweet-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g>
+                                                        <path
+                                                            d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
+                                                        </path>
+                                                        <path
+                                                            d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </article>
+                        <article class="main-post pd-l-r-15 pd-b-10 border-post">
+                            <div class="main-post-pdtop"></div>
+                            <div class="main-post-content">
+                                <div class="main-post-content-avatar">
+                                    <img alt="" draggable="true"
+                                        src="https://pbs.twimg.com/profile_images/1235101876216971265/rpJYCwN__reasonably_small.jpg">
+                                </div>
+                                <div class="main-post-content-post mr-r-l-5">
+                                    <div class="post-head">
+                                        <div class="post-head-left">
+                                            <div class="post-head-left user">
+                                                <span>Sandara Park</span>
+                                            </div>
+                                            <div class="post-head-tick mr-l-5">
+                                                <svg width="22" height="22" fill="rgb(29, 161, 242, 1.0)">
+                                                    <g>
+                                                        <path
+                                                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="post-head-user mr-l-5">
+                                                <span>@krungy21</span>
+                                            </div>
+                                            <div class="post-line mr-l-5">
+                                                <span>-</span>
+                                            </div>
+                                            <div class="post-time mr-l-5"><span>1m</span></div>
+                                        </div>
+                                        <div class="post-head-right">
+                                            <div class="post-arrow-down">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 512.011 512.011"
+                                                    style="enable-background:new 0 0 512.011 512.011;" xml:space="preserve">
+                                                    <g>
+                                                        <g>
+                                                            <path d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0
+                s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667
+                C514.096,145.416,514.096,131.933,505.755,123.592z" />
+                                                        </g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post_txt">
+                                        <p>어제는 밥심으로 더 힘이 나서 노래가 너무 좋았다는 배우들의 어떤 후기
+                                            지난주에 밥을 안먹고 무대에 올라가서 공연중에 당이 떨어졌던 아찔한 경험을 했기에
+                                            역시 밥을 먹어야돼! 밥이 보약이야! 너무 말랐어~ ㅋㅋㅋ 밥 잘 챙겨드세요~
+                                            <span><a href="#">#도산분식</a></span><span><a href="">#땡스피자</a></span>
+                                        </p>
+                                    </div>
+                                    <div class="post-images">
+                                        <div class="post-images list-images list-04">
+                                            <div class="images-item">
+                                                <img src="https://pbs.twimg.com/media/EWViRrdUMAE79WV?format=jpg&name=small"
+                                                alt="">
+                                            </div>
+                                            <div class="images-item">
+                                                <img src="https://pbs.twimg.com/media/EWViRreUEAAvfNj?format=jpg&name=360x360"
+                                                alt="">
+                                            </div>
+                                            <div class="images-item">
+                                                <img src="https://pbs.twimg.com/media/EWViRrfVcAAXh_z?format=jpg&name=360x360"
+                                                alt="">
+                                            </div>
+                                            <div class="images-item">
+                                                <img src="https://pbs.twimg.com/media/EWViRrcUMAc6lib?format=jpg&name=360x360"
+                                                alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post-tweet-group mr-t-10">
+                                        <div class="tweet-reply post-tweet-group fl-1">
+                                            <div class="icon-reply tweet-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g>
+                                                        <path
+                                                            d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l
+                                                    4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="tweet-number mr-l-10">124</div>
+                                        </div>
+                                        <div class="tweet-retweet post-tweet-group">
+                                            <div class="icon-retweet tweet-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g>
+                                                        <path
+                                                            d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="tweet-number mr-l-10">1.8K</div>
+                                        </div>
+                                        <div class="tweet-like post-tweet-group">
+                                            <div class="icon-like tweet-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g>
+                                                        <path
+                                                            d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="tweet-number mr-l-10">2.7K</div>
+                                        </div>
+                                        <div class="tweet-share">
+                                            <div class="icon-share tweet-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g>
+                                                        <path
+                                                            d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
+                                                        </path>
+                                                        <path
+                                                            d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="main-post pd-l-r-15 pd-b-10 border-post">
+                            <div class="main-post-pdtop"></div>
+                            <div class="main-post-content">
+                                <div class="main-post-content-avatar">
+                                    <img alt="" draggable="true"
+                                        src="https://pbs.twimg.com/profile_images/1111088188162891776/RIclWrpE_bigger.png"
+                                        class="css-9pa8cd">
+                                </div>
+                                <div class="main-post-content-post mr-r-l-5">
+                                    <div class="post-head">
+                                        <div class="post-head-left">
+                                            <div class="post-head-left user">
+                                                <span>Soompi</span>
+                                            </div>
+                                            <div class="post-head-tick mr-l-5">
+                                                <svg width="22" height="22" fill="rgb(29, 161, 242, 1.0)">
+                                                    <g>
+                                                        <path
+                                                            d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="post-head-user mr-l-5">
+                                                <span>@soompi</span>
+                                            </div>
+                                            <div class="post-line mr-l-5">
+                                                <span>-</span>
+                                            </div>
+                                            <div class="post-time mr-l-5"><span>1h</span></div>
+                                        </div>
+                                        <div class="post-head-right">
+                                            <div class="post-arrow-down">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 512.011 512.011"
+                                                    style="enable-background:new 0 0 512.011 512.011;" xml:space="preserve">
+                                                    <g>
+                                                        <g>
+                                                            <path d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0
+                s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667
+                C514.096,145.416,514.096,131.933,505.755,123.592z" />
+                                                        </g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                    <g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post_txt">
+                                        <p><span><a href="#">#LeeMinJung</a></span>
+                                            <span><a href="">#LeeSangYeob</a></span>, And
+                                            <span><a href="">#Alex</a></span> Meet Amid Tension In
+                                            <span>"<a href="">#OnceAgain</a>"</span>
+                                        </p>
+                                        <a href="https://t.co/PyQ4g5qGmS?amp=1">soompi.com/article/139635</a>
+    
+                                    </div>
+                                    <div class="post-images">
+                                        <img src="https://pbs.twimg.com/media/EWWrs8TUwAE-sZA?format=jpg&name=small" alt="">
+                                    </div>
+                                    <div class="post-tweet-group mr-t-10">
+                                        <div class="tweet-reply post-tweet-group fl-1">
+                                            <div class="icon-reply tweet-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g>
+                                                        <path
+                                                            d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l
+                                                    4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="tweet-number mr-l-10">124</div>
+                                        </div>
+                                        <div class="tweet-retweet post-tweet-group">
+                                            <div class="icon-retweet tweet-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g>
+                                                        <path
+                                                            d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="tweet-number mr-l-10">1.8K</div>
+                                        </div>
+                                        <div class="tweet-like post-tweet-group">
+                                            <div class="icon-like tweet-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g>
+                                                        <path
+                                                            d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="tweet-number mr-l-10">2.7K</div>
+                                        </div>
+                                        <div class="tweet-share">
+                                            <div class="icon-share tweet-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g>
+                                                        <path
+                                                            d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
+                                                        </path>
+                                                        <path
+                                                            d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                       
+                    </section>
+                </div>
+                <div id="explore" class="main-wrapper-explore page-off">
+                    <div class="main-wrapper-left-head wrapper-head group-item pd-l-r-15 h-53">
+                        <div class="main-wrapper-right-search h-53">
+                            <div class="search">
+                                <div class="search-content">
+                                    <div class="search__icon">
+                                        <svg width="40px" height="22px"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+                                    </div>
+                                    <div class="search__input">
+                                        <input type="text" class="search" placeholder="Search Twitter">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </article>
-                   
-                </section>
+                        <div class="main-wrapper-left-head__icon mr-l-20">
+                            <svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path
+                                        d="M22.772 10.506l-5.618-2.192-2.16-6.5c-.102-.307-.39-.514-.712-.514s-.61.207-.712.513l-2.16 6.5-5.62 2.192c-.287.112-.477.39-.477.7s.19.585.478.698l5.62 2.192 2.16 6.5c.102.306.39.513.712.513s.61-.207.712-.513l2.16-6.5 5.62-2.192c.287-.112.477-.39.477-.7s-.19-.585-.478-.697zm-6.49 2.32c-.208.08-.37.25-.44.46l-1.56 4.695-1.56-4.693c-.07-.21-.23-.38-.438-.462l-4.155-1.62 4.154-1.622c.208-.08.37-.25.44-.462l1.56-4.693 1.56 4.694c.07.212.23.382.438.463l4.155 1.62-4.155 1.622zM6.663 3.812h-1.88V2.05c0-.414-.337-.75-.75-.75s-.75.336-.75.75v1.762H1.5c-.414 0-.75.336-.75.75s.336.75.75.75h1.782v1.762c0 .414.336.75.75.75s.75-.336.75-.75V5.312h1.88c.415 0 .75-.336.75-.75s-.335-.75-.75-.75zm2.535 15.622h-1.1v-1.016c0-.414-.335-.75-.75-.75s-.75.336-.75.75v1.016H5.57c-.414 0-.75.336-.75.75s.336.75.75.75H6.6v1.016c0 .414.335.75.75.75s.75-.336.75-.75v-1.016h1.098c.414 0 .75-.336.75-.75s-.336-.75-.75-.75z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <section class="main-wrapper-explore-content">
+                        <article class="explore-img">
+                            <img src="https://pbs.twimg.com/semantic_core_img/1257608281033306114/EGGl1Kc6?format=jpg&name=small" alt="">
+                            <div class="explore-img__grat"></div>
+                            <div class="explore-img__txt pd-15">
+                                <h6 class="fs-13 colr-white">COVID-19 · LIVE</h6>
+                                <h4 class="fs-23 colr-white fw-600">Updates on Covid-19 in Vietnam</h4>
+                            </div> 
+                        </article>
+                        <div class="space"></div>
+                        <div class="main-wrapper-right-toptrends mr-b-15">
+                            <div class="main-wrapper-right-toptrends-content group-item pd-l-r-15 pd-10">
+                                <div class="main-wrapper-left-head__txt group-item-txt">
+                                    <p class="group-title">Vietnam trends</p>
+                                </div>
+                                <div class="main-wrapper-left-head__icon mr-l-20  group-item-icon">
+                                    <svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path d="M22.772 10.506l-5.618-2.192-2.16-6.5c-.102-.307-.39-.514-.712-.514s-.61.207-.712.513l-2.16 6.5-5.62 2.192c-.287.112-.477.39-.477.7s.19.585.478.698l5.62 2.192 2.16 6.5c.102.306.39.513.712.513s.61-.207.712-.513l2.16-6.5 5.62-2.192c.287-.112.477-.39.477-.7s-.19-.585-.478-.697zm-6.49 2.32c-.208.08-.37.25-.44.46l-1.56 4.695-1.56-4.693c-.07-.21-.23-.38-.438-.462l-4.155-1.62 4.154-1.622c.208-.08.37-.25.44-.462l1.56-4.693 1.56 4.694c.07.212.23.382.438.463l4.155 1.62-4.155 1.622zM6.663 3.812h-1.88V2.05c0-.414-.337-.75-.75-.75s-.75.336-.75.75v1.762H1.5c-.414 0-.75.336-.75.75s.336.75.75.75h1.782v1.762c0 .414.336.75.75.75s.75-.336.75-.75V5.312h1.88c.415 0 .75-.336.75-.75s-.335-.75-.75-.75zm2.535 15.622h-1.1v-1.016c0-.414-.335-.75-.75-.75s-.75.336-.75.75v1.016H5.57c-.414 0-.75.336-.75.75s.336.75.75.75H6.6v1.016c0 .414.335.75.75.75s.75-.336.75-.75v-1.016h1.098c.414 0 .75-.336.75-.75s-.336-.75-.75-.75z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="list-toptrends">
+                                <div class="trend group-item pd-l-r-15 pd-10">
+                                    <div class="trend group-item-txt">
+                                        <div class="group-list-item">
+                                            <div class="top-trend">
+                                                <div class="trend">
+                                                    <span class="trend-01">1</span>
+                                                    <span class="trend-02">-</span>
+                                                    <span class="trend-03">Music - Trending</span>
+                                                </div>
+                                            </div>
+                                            <div class="trend-hagtag">
+                                                <p>#MostRequestedLive</p>
+                                            </div>
+                                            <div class="trend-tweets">
+                                                <p>157K Tweets</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-wrapper-right-head__icon  group-item-icon">
+                                        <svg width="15px" height="15px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        viewBox="0 0 512.011 512.011"
+                                                        style="enable-background:new 0 0 512.011 512.011;" xml:space="preserve">
+                                                        <g>
+                                                            <g>
+                                                                <path d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0
+                    s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667
+                    C514.096,145.416,514.096,131.933,505.755,123.592z" />
+                                                            </g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                    </svg>
+                                    </div>
+                                </div>
+                                <div class="trend group-item pd-l-r-15 pd-10">
+                                    <div class="trend group-item-txt">
+                                        <div class="group-list-item">
+                                            <div class="top-trend">
+                                                <div class="trend">
+                                                    <span class="trend-01">2</span>
+                                                    <span class="trend-02">-</span>
+                                                    <span class="trend-03">kpop - Trending</span>
+                                                </div>
+                                            </div>
+                                            <div class="trend-hagtag">
+                                                <p>#TPHAsBTS</p>
+                                            </div>
+                                            <div class="trend-tweets">
+                                                <p>79K Tweets</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-wrapper-right-head__icon  group-item-icon">
+                                        <svg width="15px" height="15px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        viewBox="0 0 512.011 512.011"
+                                                        style="enable-background:new 0 0 512.011 512.011;" xml:space="preserve">
+                                                        <g>
+                                                            <g>
+                                                                <path d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0
+                    s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667
+                    C514.096,145.416,514.096,131.933,505.755,123.592z" />
+                                                            </g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                    </svg>
+                                    </div>
+                                </div>
+                                <div class="trend group-item pd-l-r-15 pd-10">
+                                    <div class="trend group-item-txt">
+                                        <div class="group-list-item">
+                                            <div class="top-trend">
+                                                <div class="trend">
+                                                    <span class="trend-01">3</span>
+                                                    <span class="trend-02">-</span>
+                                                    <span class="trend-03">- Trending</span>
+                                                </div>
+                                            </div>
+                                            <div class="trend-hagtag">
+                                                <p>#Hà Nội</p>
+                                            </div>
+                                            <div class="trend-tweets">
+                                                <p>4.637 Tweets</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-wrapper-right-head__icon  group-item-icon">
+                                        <svg width="15px" height="15px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        viewBox="0 0 512.011 512.011"
+                                                        style="enable-background:new 0 0 512.011 512.011;" xml:space="preserve">
+                                                        <g>
+                                                            <g>
+                                                                <path d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0
+                    s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667
+                    C514.096,145.416,514.096,131.933,505.755,123.592z" />
+                                                            </g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                    </svg>
+                                    </div>
+                                </div>
+                                <div class="trend group-item pd-l-r-15 pd-10">
+                                    <div class="trend group-item-txt">
+                                        <div class="group-list-item">
+                                            <div class="top-trend">
+                                                <div class="trend">
+                                                    <span class="trend-01">4</span>
+                                                    <span class="trend-02">-</span>
+                                                    <span class="trend-03">kpop - Trending</span>
+                                                </div>
+                                            </div>
+                                            <div class="trend-hagtag">
+                                                <p>#Bangtan</p>
+                                            </div>
+                                            <div class="trend-tweets">
+                                                <p>135K Tweets</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-wrapper-right-head__icon  group-item-icon">
+                                        <svg width="15px" height="15px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        viewBox="0 0 512.011 512.011"
+                                                        style="enable-background:new 0 0 512.011 512.011;" xml:space="preserve">
+                                                        <g>
+                                                            <g>
+                                                                <path d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0
+                    s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667
+                    C514.096,145.416,514.096,131.933,505.755,123.592z" />
+                                                            </g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                    </svg>
+                                    </div>
+                                </div>
+                                <div class="trend group-item pd-l-r-15 pd-10">
+                                    <div class="trend group-item-txt">
+                                        <div class="group-list-item">
+                                            <div class="top-trend">
+                                                <div class="trend">
+                                                    <span class="trend-01">5</span>
+                                                    <span class="trend-02">-</span>
+                                                    <span class="trend-03">- Trending</span>
+                                                </div>
+                                            </div>
+                                            <div class="trend-hagtag">
+                                                <p>#Đúng</p>
+                                            </div>
+                                            <div class="trend-tweets">
+                                                <p>6.602 Tweets</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-wrapper-right-head__icon  group-item-icon">
+                                        <svg width="15px" height="15px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        viewBox="0 0 512.011 512.011"
+                                                        style="enable-background:new 0 0 512.011 512.011;" xml:space="preserve">
+                                                        <g>
+                                                            <g>
+                                                                <path d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0
+                    s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667
+                    C514.096,145.416,514.096,131.933,505.755,123.592z" />
+                                                            </g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                        <g>
+                                                        </g>
+                                                    </svg>
+                                    </div>
+                                </div>
+                                <div class="main-timeline-follow pd-15 pd-10 show-more">
+                                    <a href="#">Show more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
             <div class="main-wrapper-right">
                 <div class="wrapper">
                  <div class="main-wrapper-right-search h-53">
-                     <div class="search">
-                         <div class="search-content">
-                             <div class="search__icon">
-                                 <svg width="40px" height="22px"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
-                             </div>
-                             <div class="search__input">
-                                 <input type="text" class="search" placeholder="Search Twitter">
-                             </div>
-                         </div>
-                     </div>
+                    <div class="wrapper-head group-item h-53">
+                        <div class="main-wrapper-right-search h-53">
+                            <div class="search">
+                                <div class="search-content">
+                                    <div class="search__icon">
+                                        <svg width="40px" height="22px"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+                                    </div>
+                                    <div class="search__input">
+                                        <input type="text" class="search" placeholder="Search Twitter">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                  </div>
                  <div class="main-wrapper-right-toptrends mr-b-15">
                      <div class="main-wrapper-right-toptrends-content group-item pd-l-r-15 pd-10">
                          <div class="main-wrapper-left-head__txt group-item-txt">
                              <p class="group-title">Vietnam trends</p>
                          </div>
-                         <div class="main-wrapper-left-head__icon  group-item-icon">
+                         <div class="main-wrapper-left-head__icon mr-l-20 group-item-icon">
                              <svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg">
                                  <g>
                                      <path d="M22.772 10.506l-5.618-2.192-2.16-6.5c-.102-.307-.39-.514-.712-.514s-.61.207-.712.513l-2.16 6.5-5.62 2.192c-.287.112-.477.39-.477.7s.19.585.478.698l5.62 2.192 2.16 6.5c.102.306.39.513.712.513s.61-.207.712-.513l2.16-6.5 5.62-2.192c.287-.112.477-.39.477-.7s-.19-.585-.478-.697zm-6.49 2.32c-.208.08-.37.25-.44.46l-1.56 4.695-1.56-4.693c-.07-.21-.23-.38-.438-.462l-4.155-1.62 4.154-1.622c.208-.08.37-.25.44-.462l1.56-4.693 1.56 4.694c.07.212.23.382.438.463l4.155 1.62-4.155 1.622zM6.663 3.812h-1.88V2.05c0-.414-.337-.75-.75-.75s-.75.336-.75.75v1.762H1.5c-.414 0-.75.336-.75.75s.336.75.75.75h1.782v1.762c0 .414.336.75.75.75s.75-.336.75-.75V5.312h1.88c.415 0 .75-.336.75-.75s-.335-.75-.75-.75zm2.535 15.622h-1.1v-1.016c0-.414-.335-.75-.75-.75s-.75.336-.75.75v1.016H5.57c-.414 0-.75.336-.75.75s.336.75.75.75H6.6v1.016c0 .414.335.75.75.75s.75-.336.75-.75v-1.016h1.098c.414 0 .75-.336.75-.75s-.336-.75-.75-.75z">
@@ -1684,6 +2071,121 @@
              </div>
         </div>
     </main>
+    <div class="nav-mobile">
+        <nav class="header-nav">
+            <ul class="header-nav-ul">
+                <li id="home" class="header-nav-ul-li active">
+                    <div class="header-nav-ul-li-content-wrapper">
+                        <div class="header-nav-ul-li-content nav-icon">
+                            <svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path d="M22.58 7.35L12.475 1.897c-.297-.16-.654-.16-.95 0L1.425 7.35c-.486.264-.667.87-.405 1.356.18.335.525.525.88.525.16 0 .324-.038.475-.12l.734-.396 1.59 11.25c.216 1.214 1.31 2.062 2.66 2.062h9.282c1.35 0 2.444-.848 2.662-2.088l1.588-11.225.737.398c.485.263 1.092.082 1.354-.404.263-.486.08-1.093-.404-1.355zM12 15.435c-1.795 0-3.25-1.455-3.25-3.25s1.455-3.25 3.25-3.25 3.25 1.455 3.25 3.25-1.455 3.25-3.25 3.25z">
+                                    </path>
+                                </g>
+                            </svg>
+                            <div class="header-nav-ul-li__txt">Home</div>
+                        </div>
+                    </div>
+                </li>
+                <li id="explore" class="header-nav-ul-li">
+                    <div class="header-nav-ul-li-content-wrapper">
+                        <div class="header-nav-ul-li-content nav-icon">
+                            <svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path d="M21 7.337h-3.93l.372-4.272c.036-.412-.27-.775-.682-.812-.417-.03-.776.27-.812.683l-.383 4.4h-6.32l.37-4.27c.037-.413-.27-.776-.68-.813-.42-.03-.777.27-.813.683l-.382 4.4H3.782c-.414 0-.75.337-.75.75s.336.75.75.75H7.61l-.55 6.327H3c-.414 0-.75.336-.75.75s.336.75.75.75h3.93l-.372 4.272c-.036.412.27.775.682.812l.066.003c.385 0 .712-.295.746-.686l.383-4.4h6.32l-.37 4.27c-.036.413.27.776.682.813l.066.003c.385 0 .712-.295.746-.686l.382-4.4h3.957c.413 0 .75-.337.75-.75s-.337-.75-.75-.75H16.39l.55-6.327H21c.414 0 .75-.336.75-.75s-.336-.75-.75-.75zm-6.115 7.826h-6.32l.55-6.326h6.32l-.55 6.326z">
+                                    </path>
+                                </g>
+                            </svg>
+                            <div class="header-nav-ul-li__txt">Explore</div>
+                        </div>
+                    </div>
+                </li>
+                <li id="notifications" class="header-nav-ul-li">
+                    <div class="header-nav-ul-li-content-wrapper">
+                        <div class="header-nav-ul-li-content nav-icon">
+                            <svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path d="M21.697 16.468c-.02-.016-2.14-1.64-2.103-6.03.02-2.532-.812-4.782-2.347-6.335C15.872 2.71 14.01 1.94 12.005 1.93h-.013c-2.004.01-3.866.78-5.242 2.174-1.534 1.553-2.368 3.802-2.346 6.334.037 4.33-2.02 5.967-2.102 6.03-.26.193-.366.53-.265.838.102.308.39.515.712.515h4.92c.102 2.31 1.997 4.16 4.33 4.16s4.226-1.85 4.327-4.16h4.922c.322 0 .61-.206.71-.514.103-.307-.003-.645-.263-.838zM12 20.478c-1.505 0-2.73-1.177-2.828-2.658h5.656c-.1 1.48-1.323 2.66-2.828 2.66zM4.38 16.32c.74-1.132 1.548-3.028 1.524-5.896-.018-2.16.644-3.982 1.913-5.267C8.91 4.05 10.397 3.437 12 3.43c1.603.008 3.087.62 4.18 1.728 1.27 1.285 1.933 3.106 1.915 5.267-.024 2.868.785 4.765 1.525 5.896H4.38z">
+                                    </path>
+                                </g>
+                            </svg>
+                            <div class="header-nav-ul-li__txt">Notifications</div>
+
+                        </div>
+                    </div>
+                </li>
+                <li id="messages" class="header-nav-ul-li">
+                    <div class="header-nav-ul-li-content-wrapper">
+                        <div class="header-nav-ul-li-content nav-icon">
+                            <svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path d="M19.25 3.018H4.75C3.233 3.018 2 4.252 2 5.77v12.495c0 1.518 1.233 2.753 2.75 2.753h14.5c1.517 0 2.75-1.235 2.75-2.753V5.77c0-1.518-1.233-2.752-2.75-2.752zm-14.5 1.5h14.5c.69 0 1.25.56 1.25 1.25v.714l-8.05 5.367c-.273.18-.626.182-.9-.002L3.5 6.482v-.714c0-.69.56-1.25 1.25-1.25zm14.5 14.998H4.75c-.69 0-1.25-.56-1.25-1.25V8.24l7.24 4.83c.383.256.822.384 1.26.384.44 0 .877-.128 1.26-.383l7.24-4.83v10.022c0 .69-.56 1.25-1.25 1.25z">
+                                    </path>
+                                </g>
+                            </svg>
+                            <div class="header-nav-ul-li__txt">Messages</div>
+
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+            <div class="header-nav-button btn">
+                <a href="">Tweet</a>
+            </div>
+            <div class="header-user mr-t-20 mr-b-10 pd-10">
+                <div class="header-user-avatar">
+                    <img class="bor-r-50" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png" alt="">
+                </div>
+                <div class="header-user-content mr-l-10">
+                    <h4>Duyen Vu</h4>
+                    <p>@duyenvu5</p>
+                </div>
+                <div class="header-user-icon">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.011 512.011" style="enable-background:new 0 0 512.011 512.011;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0
+        s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667
+        C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+                            </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
