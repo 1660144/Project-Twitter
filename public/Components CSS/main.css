@@ -1,6 +1,7 @@
 
 /* ----- Main ----- */
 main{
+    width: 990px;
     overflow-y: auto;
     flex-grow: 2;
 }
