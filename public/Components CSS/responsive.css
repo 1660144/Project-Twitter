@@ -1,0 +1,76 @@
+@media screen and (max-width: 1265px){
+    .header-nav-ul-li__txt, .header-nav-button, .header-user-content, .header-user-icon{
+       display: none;
+    }
+}
+
+
+@media screen and (max-width: 1074px){
+    .main-wrapper-right{
+        max-width: 288px;
+    }
+}
+@media screen and (max-width: 987px){
+    .main-wrapper-right{
+        display: none;
+    }
+}
+@media screen and (max-width: 752px){
+    header{
+        flex-grow: 0;
+    }
+    main{
+        flex-grow: 0;
+        width: 100vw;
+    }
+}
+@media screen and (max-width: 500px){
+    header, .main-wrapper-left-tweet{
+        display: none;
+    }
+    main{
+        margin-bottom: 53px;
+    }
+    .main-wrapper-left{
+        flex-grow: 0;
+        width: 100vw;
+    }
+    .nav-mobile{
+        display: block;
+    }
+    .tweet-number{
+        margin-left: 0;
+    }
+    .tweet-icon{
+        transform: scale(0.78);
+    }
+    .post-images{
+        max-height: 171px;
+    }
+    .avatar-head{
+        display: block;
+    }
+    .wrapper-head.group-item{
+        justify-content: end;
+    }
+    .main-wrapper-left-head__txt{
+        flex-grow: 1;
+        margin-left: 5px;
+    }
+    .avatar-infor{
+        display: block;
+        font-size: 15px;
+    }
+    .avatar-content .avatar-head img{
+        transform: scale(1.3);
+    }
+    .bg{
+        display: block;
+    }
+    .avatar-infor .avatar-content.group-item{
+        border-bottom: none;
+    }
+    .avatar-infor .main-wrapper-left-tweet__avatar img{
+        margin-left: -15px;
+    }
+}

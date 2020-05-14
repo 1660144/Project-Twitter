@@ -29,9 +29,8 @@ body{
     position: fixed;
     align-items: stretch;
     display: flex;
+    justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 1220px;
-    margin: 0 auto
 }
 a{
     text-decoration: none;
@@ -112,6 +111,10 @@ input{
 .mr-l-20{
     margin-left: 20px;
 }
+.mr-t-b-10{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .pd-t-10{
     padding-top: 10px;
 }
@@ -135,6 +138,10 @@ input{
 .pd-l-r-15{
     padding-left: 15px;
     padding-right: 15px;
+}
+.pd-t-b-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .bor-t{
     border-top: 1px solid var(--background-space);

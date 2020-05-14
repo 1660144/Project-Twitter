@@ -1,14 +1,11 @@
 
-
 /* ----- Main ----- */
 main{
-    flex-grow: 2;
     overflow-y: auto;
+    flex-grow: 2;
 }
 .main-wrapper{
-    width: 990px;
     display: flex;
-    
 }
 .main-wrapper-left{
     flex-grow: 2;
@@ -24,6 +21,7 @@ main{
     
 }
 .wrapper-head{
+    z-index: 5;
     position: sticky;
     top: 0;
     background-color: #fff;
@@ -50,7 +48,10 @@ main{
     width: 49px;
     height: 49px;
     border-radius: 50%;
-    
+}
+.avatar-head{
+    display: none;
+    transform: scale(0.6);
 }
 
 .main-wrapper-left-tweet__content__input{
@@ -310,10 +311,12 @@ main{
     font-size: 19px;
     font-weight: 800;
 }
+.main-wrapper-right .main-wrapper-right-toptrends{
+    margin-top: 20px;
+}
 .main-wrapper-right-toptrends{
     border-radius: 15px;
     background-color: var(--background-toptrends);
-    margin-top: 20px;
 }
 .trend:hover{
     background-color: var(--background-main-post);
@@ -327,6 +330,7 @@ main{
 .trend-hagtag{
     font-weight: bold;
     font-size: 15px;
+    margin: 2px 0;
 }
 .trend-tweets{
     color: var(--color-post-txt);
@@ -402,9 +406,111 @@ main{
     width: 100vw;
     background-color: #fff;
     display: none;
+    border-top: 1px solid var(--color-border-link);
 }
 .nav-mobile nav ul{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
 }
+
+.avatar-infor{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    width: 290px;
+    background-color: #ffffff;
+    transition: all 0.5s ease;
+    display: none;
+    height: 100%;
+}
+.avatar-wrapper{
+    overflow: scroll;
+    height: 100%;
+}
+.avatar-infor.on{
+    left: 0;
+}
+.avatar-infor.off{
+    left: -100%;
+}
+.avatar-head:checked + .avatar-infor{
+    left: 0;
+}
+body:checked ~ .avatar-infor{
+    left: 0;
+}
+#check:checked ~ .avatar-infor{
+    left: 0;
+}
+.bg{
+    display: none;
+    z-index: 7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all 1s ease-out;
+}
+.bg.on{
+    display: block;
+}
+.bg.off{
+    display: none;
+}
+.avatar-info__number-follow.group-item{
+    justify-content: start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: none;
+    font-size: 15px;
+}
+.follow:nth-child(2){
+    margin-left: 15px;
+}
+.avatar-infor-nav-ul-li-content.group-item{
+    justify-content: start;
+    border-bottom: none;
+    align-items: unset;
+}
+.avatar-infor-nav-ul-li-content.group-item svg{
+    margin-right: 10px;
+}
+.avatar-infor-nav{
+    margin-bottom: 53px;
+}
+.avatar-infor-nav ul li{
+    font-size: 14px;
+}
+#moments, #analytics, #display, #help-center{
+    border-bottom: 0.5px solid var(--color-border-link);
+}
+
+.messages-content{
+    text-align: center;
+    padding-top: 37px;
+    padding-bottom: 37px;
+}
+.messages-content p{
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: var(--color-footer);
+}
+.messages-btn{
+    margin-top: 20px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
